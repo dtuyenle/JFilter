@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="filterData.js"></script>
+    <script src="filterClass.js"></script>
+    <script>
+
+
+        var filterO = {
+            tvSize: {min:0,max:999999},
+            productType: ['fixed-position-mounts','tilting-mounts','full-motion-plus-mounts','full-motion-mounts'] ,
+            displayReviews: [true,false],
+            price: {min:0,max:9999}
+        };
+
+        var filterJ = {
+            tvSize: {min:0,max:999999},
+            productType: ['fixed-position-mounts','tilting-mounts']    
+        }
+
+        var option = {
+        	startId: 0,
+        	limit: 99999,
+        	rankName: '',
+        	rankValue: ''
+        }
+
+        var filter = new JFilter(json);        
+
+        console.log(filter.getResult(filterO,option));
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
